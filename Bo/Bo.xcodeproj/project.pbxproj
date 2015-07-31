@@ -7,16 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E26C1261B6AF2F20077E76F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E26C1241B6AF2F20077E76F /* Interface.storyboard */; };
+		0E26C1281B6AF2F20077E76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E26C1271B6AF2F20077E76F /* Assets.xcassets */; };
+		0E26C12F1B6AF2F20077E76F /* BoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E26C12E1B6AF2F20077E76F /* BoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E26C1361B6AF2F20077E76F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26C1351B6AF2F20077E76F /* InterfaceController.swift */; };
+		0E26C1381B6AF2F20077E76F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26C1371B6AF2F20077E76F /* ExtensionDelegate.swift */; };
+		0E26C13A1B6AF2F20077E76F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26C1391B6AF2F20077E76F /* NotificationController.swift */; };
+		0E26C13C1B6AF2F20077E76F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26C13B1B6AF2F20077E76F /* GlanceController.swift */; };
+		0E26C13E1B6AF2F20077E76F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26C13D1B6AF2F20077E76F /* ComplicationController.swift */; };
+		0E26C1401B6AF2F20077E76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E26C13F1B6AF2F20077E76F /* Assets.xcassets */; };
+		0E26C1441B6AF2F20077E76F /* BoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0E26C1221B6AF2F20077E76F /* BoWatch.app */; };
 		0EA7D62F1A9520970045462E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D62E1A9520970045462E /* main.m */; };
 		0EA7D6321A9520970045462E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D6311A9520970045462E /* AppDelegate.m */; };
-		0EA7D6351A9520970045462E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D6341A9520970045462E /* ViewController.m */; };
+		0EA7D6351A9520970045462E /* BoLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D6341A9520970045462E /* BoLoginViewController.m */; };
 		0EA7D6381A9520970045462E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA7D6361A9520970045462E /* Main.storyboard */; };
 		0EA7D63A1A9520970045462E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EA7D6391A9520970045462E /* Images.xcassets */; };
 		0EA7D63D1A9520970045462E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA7D63B1A9520970045462E /* LaunchScreen.xib */; };
 		0EA7D6491A9520980045462E /* BoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D6481A9520980045462E /* BoTests.m */; };
+		0EA7D6531A9523D20045462E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA7D6521A9523D20045462E /* FacebookSDK.framework */; };
+		0EA7D6591A9526460045462E /* BoCredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D6581A9526460045462E /* BoCredentialManager.m */; };
+		0EA7D65C1A9526580045462E /* BoParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D65B1A9526580045462E /* BoParseManager.m */; };
+		0EA7D65F1A95266B0045462E /* BoFacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7D65E1A95266B0045462E /* BoFacebookManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0E26C1301B6AF2F20077E76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EA7D6211A9520970045462E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E26C12D1B6AF2F20077E76F;
+			remoteInfo = "BoWatch Extension";
+		};
+		0E26C1421B6AF2F20077E76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EA7D6211A9520970045462E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E26C1211B6AF2F20077E76F;
+			remoteInfo = BoWatch;
+		};
 		0EA7D6431A9520970045462E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0EA7D6211A9520970045462E /* Project object */;
@@ -26,27 +54,81 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0E26C14A1B6AF2F20077E76F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E26C12F1B6AF2F20077E76F /* BoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E26C14C1B6AF2F20077E76F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0E26C1441B6AF2F20077E76F /* BoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E26C1221B6AF2F20077E76F /* BoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E26C1251B6AF2F20077E76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0E26C1271B6AF2F20077E76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E26C1291B6AF2F20077E76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E26C12E1B6AF2F20077E76F /* BoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E26C1341B6AF2F20077E76F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0E26C1351B6AF2F20077E76F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0E26C1371B6AF2F20077E76F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0E26C1391B6AF2F20077E76F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0E26C13B1B6AF2F20077E76F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		0E26C13D1B6AF2F20077E76F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0E26C13F1B6AF2F20077E76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E26C1411B6AF2F20077E76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EA7D6291A9520970045462E /* Bo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA7D62D1A9520970045462E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EA7D62E1A9520970045462E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0EA7D6301A9520970045462E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0EA7D6311A9520970045462E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0EA7D6331A9520970045462E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0EA7D6341A9520970045462E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0EA7D6331A9520970045462E /* BoLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoLoginViewController.h; sourceTree = "<group>"; };
+		0EA7D6341A9520970045462E /* BoLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoLoginViewController.m; sourceTree = "<group>"; };
 		0EA7D6371A9520970045462E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EA7D6391A9520970045462E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0EA7D63C1A9520970045462E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0EA7D6421A9520970045462E /* BoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA7D6471A9520980045462E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EA7D6481A9520980045462E /* BoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoTests.m; sourceTree = "<group>"; };
+		0EA7D6521A9523D20045462E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		0EA7D6551A9525B10045462E /* BoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoPrefixHeader.pch; sourceTree = "<group>"; };
+		0EA7D6571A9526460045462E /* BoCredentialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoCredentialManager.h; sourceTree = "<group>"; };
+		0EA7D6581A9526460045462E /* BoCredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoCredentialManager.m; sourceTree = "<group>"; };
+		0EA7D65A1A9526580045462E /* BoParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoParseManager.h; sourceTree = "<group>"; };
+		0EA7D65B1A9526580045462E /* BoParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoParseManager.m; sourceTree = "<group>"; };
+		0EA7D65D1A95266B0045462E /* BoFacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoFacebookManager.h; sourceTree = "<group>"; };
+		0EA7D65E1A95266B0045462E /* BoFacebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoFacebookManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E26C12B1B6AF2F20077E76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EA7D6261A9520970045462E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA7D6531A9523D20045462E /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,11 +142,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E26C1231B6AF2F20077E76F /* BoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				0E26C1241B6AF2F20077E76F /* Interface.storyboard */,
+				0E26C1271B6AF2F20077E76F /* Assets.xcassets */,
+				0E26C1291B6AF2F20077E76F /* Info.plist */,
+			);
+			path = BoWatch;
+			sourceTree = "<group>";
+		};
+		0E26C1321B6AF2F20077E76F /* BoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E26C1351B6AF2F20077E76F /* InterfaceController.swift */,
+				0E26C1371B6AF2F20077E76F /* ExtensionDelegate.swift */,
+				0E26C1391B6AF2F20077E76F /* NotificationController.swift */,
+				0E26C13B1B6AF2F20077E76F /* GlanceController.swift */,
+				0E26C13D1B6AF2F20077E76F /* ComplicationController.swift */,
+				0E26C13F1B6AF2F20077E76F /* Assets.xcassets */,
+				0E26C1411B6AF2F20077E76F /* Info.plist */,
+				0E26C1331B6AF2F20077E76F /* Supporting Files */,
+			);
+			path = "BoWatch Extension";
+			sourceTree = "<group>";
+		};
+		0E26C1331B6AF2F20077E76F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E26C1341B6AF2F20077E76F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0EA7D6201A9520970045462E = {
 			isa = PBXGroup;
 			children = (
 				0EA7D62B1A9520970045462E /* Bo */,
 				0EA7D6451A9520980045462E /* BoTests */,
+				0E26C1231B6AF2F20077E76F /* BoWatch */,
+				0E26C1321B6AF2F20077E76F /* BoWatch Extension */,
 				0EA7D62A1A9520970045462E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +191,8 @@
 			children = (
 				0EA7D6291A9520970045462E /* Bo.app */,
 				0EA7D6421A9520970045462E /* BoTests.xctest */,
+				0E26C1221B6AF2F20077E76F /* BoWatch.app */,
+				0E26C12E1B6AF2F20077E76F /* BoWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,10 +200,10 @@
 		0EA7D62B1A9520970045462E /* Bo */ = {
 			isa = PBXGroup;
 			children = (
+				0EA7D6601A9526740045462E /* Services */,
 				0EA7D6301A9520970045462E /* AppDelegate.h */,
 				0EA7D6311A9520970045462E /* AppDelegate.m */,
-				0EA7D6331A9520970045462E /* ViewController.h */,
-				0EA7D6341A9520970045462E /* ViewController.m */,
+				0EA7D6561A9526260045462E /* ViewControllers */,
 				0EA7D6361A9520970045462E /* Main.storyboard */,
 				0EA7D6391A9520970045462E /* Images.xcassets */,
 				0EA7D63B1A9520970045462E /* LaunchScreen.xib */,
@@ -96,8 +215,10 @@
 		0EA7D62C1A9520970045462E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0EA7D6541A9523E10045462E /* frameworks */,
 				0EA7D62D1A9520970045462E /* Info.plist */,
 				0EA7D62E1A9520970045462E /* main.m */,
+				0EA7D6551A9525B10045462E /* BoPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,9 +240,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0EA7D6541A9523E10045462E /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA7D6521A9523D20045462E /* FacebookSDK.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		0EA7D6561A9526260045462E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EA7D6331A9520970045462E /* BoLoginViewController.h */,
+				0EA7D6341A9520970045462E /* BoLoginViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0EA7D6601A9526740045462E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EA7D6571A9526460045462E /* BoCredentialManager.h */,
+				0EA7D6581A9526460045462E /* BoCredentialManager.m */,
+				0EA7D65A1A9526580045462E /* BoParseManager.h */,
+				0EA7D65B1A9526580045462E /* BoParseManager.m */,
+				0EA7D65D1A95266B0045462E /* BoFacebookManager.h */,
+				0EA7D65E1A95266B0045462E /* BoFacebookManager.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E26C1211B6AF2F20077E76F /* BoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E26C14B1B6AF2F20077E76F /* Build configuration list for PBXNativeTarget "BoWatch" */;
+			buildPhases = (
+				0E26C1201B6AF2F20077E76F /* Resources */,
+				0E26C14A1B6AF2F20077E76F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E26C1311B6AF2F20077E76F /* PBXTargetDependency */,
+			);
+			name = BoWatch;
+			productName = BoWatch;
+			productReference = 0E26C1221B6AF2F20077E76F /* BoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0E26C12D1B6AF2F20077E76F /* BoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E26C1491B6AF2F20077E76F /* Build configuration list for PBXNativeTarget "BoWatch Extension" */;
+			buildPhases = (
+				0E26C12A1B6AF2F20077E76F /* Sources */,
+				0E26C12B1B6AF2F20077E76F /* Frameworks */,
+				0E26C12C1B6AF2F20077E76F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BoWatch Extension";
+			productName = "BoWatch Extension";
+			productReference = 0E26C12E1B6AF2F20077E76F /* BoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		0EA7D6281A9520970045462E /* Bo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EA7D64C1A9520980045462E /* Build configuration list for PBXNativeTarget "Bo" */;
@@ -129,10 +314,12 @@
 				0EA7D6251A9520970045462E /* Sources */,
 				0EA7D6261A9520970045462E /* Frameworks */,
 				0EA7D6271A9520970045462E /* Resources */,
+				0E26C14C1B6AF2F20077E76F /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E26C1431B6AF2F20077E76F /* PBXTargetDependency */,
 			);
 			name = Bo;
 			productName = Bo;
@@ -166,6 +353,12 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = MiraStudio;
 				TargetAttributes = {
+					0E26C1211B6AF2F20077E76F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					0E26C12D1B6AF2F20077E76F = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					0EA7D6281A9520970045462E = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -190,11 +383,30 @@
 			targets = (
 				0EA7D6281A9520970045462E /* Bo */,
 				0EA7D6411A9520970045462E /* BoTests */,
+				0E26C1211B6AF2F20077E76F /* BoWatch */,
+				0E26C12D1B6AF2F20077E76F /* BoWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0E26C1201B6AF2F20077E76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E26C1281B6AF2F20077E76F /* Assets.xcassets in Resources */,
+				0E26C1261B6AF2F20077E76F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E26C12C1B6AF2F20077E76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E26C1401B6AF2F20077E76F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EA7D6271A9520970045462E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,13 +427,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E26C12A1B6AF2F20077E76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E26C13A1B6AF2F20077E76F /* NotificationController.swift in Sources */,
+				0E26C1381B6AF2F20077E76F /* ExtensionDelegate.swift in Sources */,
+				0E26C13E1B6AF2F20077E76F /* ComplicationController.swift in Sources */,
+				0E26C1361B6AF2F20077E76F /* InterfaceController.swift in Sources */,
+				0E26C13C1B6AF2F20077E76F /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EA7D6251A9520970045462E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EA7D6351A9520970045462E /* ViewController.m in Sources */,
+				0EA7D65C1A9526580045462E /* BoParseManager.m in Sources */,
+				0EA7D6351A9520970045462E /* BoLoginViewController.m in Sources */,
+				0EA7D65F1A95266B0045462E /* BoFacebookManager.m in Sources */,
 				0EA7D6321A9520970045462E /* AppDelegate.m in Sources */,
 				0EA7D62F1A9520970045462E /* main.m in Sources */,
+				0EA7D6591A9526460045462E /* BoCredentialManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +463,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0E26C1311B6AF2F20077E76F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E26C12D1B6AF2F20077E76F /* BoWatch Extension */;
+			targetProxy = 0E26C1301B6AF2F20077E76F /* PBXContainerItemProxy */;
+		};
+		0E26C1431B6AF2F20077E76F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E26C1211B6AF2F20077E76F /* BoWatch */;
+			targetProxy = 0E26C1421B6AF2F20077E76F /* PBXContainerItemProxy */;
+		};
 		0EA7D6441A9520970045462E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0EA7D6281A9520970045462E /* Bo */;
@@ -244,6 +481,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0E26C1241B6AF2F20077E76F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E26C1251B6AF2F20077E76F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		0EA7D6361A9520970045462E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,6 +508,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0E26C1451B6AF2F20077E76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = BoWatch_Extension;
+				INFOPLIST_FILE = BoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirastudio.Bo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0E26C1461B6AF2F20077E76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = BoWatch_Extension;
+				INFOPLIST_FILE = BoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirastudio.Bo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0E26C1471B6AF2F20077E76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirastudio.Bo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0E26C1481B6AF2F20077E76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirastudio.Bo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		0EA7D64A1A9520980045462E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,6 +670,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bo",
+				);
+				GCC_PREFIX_HEADER = Bo/BoPrefixHeader.pch;
 				INFOPLIST_FILE = Bo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +685,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bo",
+				);
+				GCC_PREFIX_HEADER = Bo/BoPrefixHeader.pch;
 				INFOPLIST_FILE = Bo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,6 +733,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E26C1491B6AF2F20077E76F /* Build configuration list for PBXNativeTarget "BoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E26C1471B6AF2F20077E76F /* Debug */,
+				0E26C1481B6AF2F20077E76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0E26C14B1B6AF2F20077E76F /* Build configuration list for PBXNativeTarget "BoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E26C1451B6AF2F20077E76F /* Debug */,
+				0E26C1461B6AF2F20077E76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0EA7D6241A9520970045462E /* Build configuration list for PBXProject "Bo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -414,6 +765,7 @@
 				0EA7D64E1A9520980045462E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EA7D64F1A9520980045462E /* Build configuration list for PBXNativeTarget "BoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +774,7 @@
 				0EA7D6511A9520980045462E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

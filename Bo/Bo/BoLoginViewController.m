@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 MiraStudio. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BoLoginViewController.h"
 
-@interface ViewController ()
+@interface BoLoginViewController ()
 
 @end
 
-@implementation ViewController
+@implementation BoLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
